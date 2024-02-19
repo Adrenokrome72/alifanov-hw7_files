@@ -8,7 +8,6 @@ cook_book = {}
 with open('recipes.txt', encoding='utf-8') as file:
   for line in file:
     dish_name = line.strip()
-    #print(dish_name)
     ingredient_count = file.readline()
     ingredient_list = []
     for i in range(int(ingredient_count)):
@@ -21,7 +20,6 @@ with open('recipes.txt', encoding='utf-8') as file:
       })
       dict_ = {dish_name: ingredient_list}
     empty_line = file.readline()
-   # print (dict_)
     cook_book.update(dict_)
 print('Задача №1\n')
 print('cook_book =')
